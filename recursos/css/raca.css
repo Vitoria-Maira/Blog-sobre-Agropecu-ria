@@ -1,0 +1,127 @@
+body{
+    background: url(../fundo.jpg);
+    background-image: url(../fundo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.fundo-img{
+    background-color: #F5DEB3;
+}
+/*Menu transparente*/
+.header{
+    width: 100%;
+    background-color:transparent;
+}
+
+.header ul{
+    text-align:right ;
+    margin-right: 50px;
+
+}
+
+.header ul li{
+    list-style: none;
+    display: inline-block;
+
+}
+
+.header ul li a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(7, 7, 7);
+    font-size: 12px;
+    
+    letter-spacing: 2px;
+    font-weight: 400;
+    padding: 15px;
+    transition: all ease 0.5s;
+}
+
+.header ul li a:hover{
+    background-color: #211b4385;
+}
+/*Paralax*/
+.header-site2{
+    background-image: url(/img/agriculture-1867212_1920.jpg);
+    color: antiquewhite;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.header-site3{
+    background-image: url(/img/agriculture-3732476_1920.jpg);
+    color: antiquewhite;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.bg-bio {
+    
+    height: 1100px;    
+    
+}
+.text-title{
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.font-esterna{
+    font-family: cfn; 
+    font-weight: 3000px;
+}
+
+/*@font-face {
+font-family: cfn;
+src: url(/fonte/hello_valentica/Hello\ Valentina.ttf);
+
+     }*/
+
+     /*Efeito de zoom com mouse sobre a imagem*/
+
+.magico{
+    overflow: hidden;
+}
+.magico{
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.magico:hover img{
+    -moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+/*efeito de transformação aumenta a imagem*/
+
+#imagem1 {
+    padding: 3px;
+  
+}
+
+#imagem1:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.efeito4{
+    background: tomato;
+    text-decoration: none;
+    margin-left: 30px;
+  
+  }
+  .efeito4:hover{
+  animation: bounce 1s;
+  }
+
+  .FUNDO{
+    background-color: #F5DEB3;
+  }

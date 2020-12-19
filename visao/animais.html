@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../recursos/css/controle-gado-inicial.css">
+    <script src="https://kit.fontawesome.com/d6b4ef801b.js" crossorigin="anonymous"></script>
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Animais</title>
+</head>
+<body class="FG">
+    <!--Menu-->
+    <div class="header">
+        <ul>
+          
+
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../visao/agropecuaria.html">Sobre Agropecuária</a></li>
+            <li><a href="../visao/raçadegado.html">Raças de Gado</a></li>
+            <li><a href="../visao/platio.html">Plantio</a></li>
+           
+            <li><a href="../visao/mapa.html">Mapas</a></li>
+            <li><a href="../visao/animais.html">Animais</a></li>
+          
+
+        </ul>
+      </div>
+    
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-12 mt-3">
+                <img src="../img/piglet-3386356_1920.jpg"width="300px" height="180px" class="img-fluid d-block small_img"/></a>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12 mt-3">
+               <img src="../img/chicken-4474176_1920.jpg" width="300px" height="180px" class="img-fluid d-block small_img"/></a>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12 mt-3">
+               <img src="../img/lamb-2216160_1920.jpg" width="300px" height="180px" class="img-fluid d-block small_img"/></a>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12 mt-3">
+                <img src="../img/cow-2782461_1920.jpg"width="300px" height="180px" class="img-fluid d-block small_img" /></a>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12 mt-3">
+                <img src="../img/cock-2522623_1920.jpg" width="300px" height="180px" class="img-fluid d-block small_img" /></a>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12 mt-3">
+                <img src="../img/cow-3383624_1920.jpg"width="300px" height="180px" class="img-fluid d-block small_img"/></a>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12 mt-3">
+                <img src="../img/sheep-690371_1920.jpg"width="300px" height="180px" class="img-fluid d-block small_img" /></a>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12 mt-3">
+               <img src="../img/boi8.jpg" width="300px" height="180px" class="img-fluid d-block small_img" /></a>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12 mt-3">
+                <img src="../img/hen-5642953_1920.jpg"width="300px" height="180px" class="img-fluid d-block small_img"/></a>
+            </div>
+        </div>
+    </div>
+
+
+    <br><br><br><br>
+
+
+    <div class="modal">
+        <div class="modal_content">
+            <img src="../img/piglet-3386356_1920.jpg"width="300px" height="180px" class="img-fluid d-block small_img" id="modal_img" /></a>
+           
+        </div>
+        <span id="bt_close">&times;</span>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+        let imagens= document.querySelectorAll('.small_img');
+let modal = document.querySelector('.modal');
+let modalImg = document.querySelector('#modal_img');
+let btClose = document.querySelector('#bt_close');
+let srcVal="";
+
+for(let i =0; i<imagens.length;i++){
+    imagens[i].addEventListener('click',function(){
+        
+        srcVal = imagens[i].getAttribute('src');
+        modalImg.setAttribute('src', srcVal);
+        modal.classList.toggle('modal');
+    });
+    
+}
+
+
+btClose.addEventListener('click', function(){
+    modal.classList.toggle('modal');
+});
+
+    </script>
+
+</body>
+</html>
